@@ -1,0 +1,106 @@
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .header {
+        &__container {
+            width: 900px;
+        }
+    }
+}
+
+/* smartphones */
+
+@media (max-width: 768px) {
+    .header {
+        &__container {
+            width: 750px;
+        }
+    }
+    .navbar {
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, .8);
+            transition: 0.6s all;
+            &-active {
+                left: 0;
+            }
+        }
+        &__item {
+            padding-right: 0;
+            margin: 10px 0;
+        }
+        &__link {
+            font-size: 20px;
+            text-align: left;
+            transform: none;
+            &:hover {
+                letter-spacing: normal;
+            }
+        }
+        &__burger {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 18px;
+            span {
+                display: block;
+                height: 3px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 2px;
+                transition: all 0.6s;
+            }
+            &-active {
+                span {
+                    margin-bottom: -3px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &__container {
+            width: 100%;
+        }
+    }
+}
+
+/* 414px for iPhone XR */
+
+@media (max-width: 414px) {
+    .header {
+        &__container {
+            grid-template: 1fr / repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    
+}

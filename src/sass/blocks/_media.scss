@@ -1,11 +1,70 @@
+/* iPad Pro Landscape mode */
+
+@media (max-width: 1366px) {
+    .navbar {
+        &__link {
+            transform: none;
+            &:hover {
+                letter-spacing: normal;
+            }
+        }
+    }
+    .btn {
+        box-shadow: none;
+    }
+}
+
 @media (max-width: 1200px) {
 
 }
 
+/* iPad Air Landscape mode */
+
+@media (max-width: 1180px) {
+    .navbar {
+        &__link {
+            transform: none;
+            &:hover {
+                letter-spacing: normal;
+            }
+        }
+    }
+}
+
+/* iPad Mini Landscape mode */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 1000px;
+    }
+    .navbar {
+        &__link {
+            transform: none;
+            &:hover {
+                letter-spacing: normal;
+            }
+        }
+    }
+}
+
 @media (max-width: 992px) {
-    .header {
-        &__container {
-            width: 900px;
+    .container {
+        width: 900px;
+    }
+}
+
+/* iPad Air Portrait mode */
+
+@media (max-width: 820px) {
+    .container {
+        width: 740px;
+    }
+    .navbar {
+        &__link {
+            transform: none;
+            &:hover {
+                letter-spacing: normal;
+            }
         }
     }
 }
@@ -13,13 +72,12 @@
 /* smartphones */
 
 @media (max-width: 768px) {
-    .header {
-        &__container {
-            width: 750px;
-        }
+    .container {
+        width: 750px;
     }
     .navbar {
         &__list {
+            z-index: 20;
             position: fixed;
             flex-direction: column;
             justify-content: center;
@@ -84,9 +142,17 @@
 }
 
 @media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
     .header {
         &__container {
-            width: 100%;
+            grid-template: 1fr / repeat(2, 1fr);
+        }
+    }
+    .showcase {
+        &__block {
+            right: 25px;
         }
     }
 }
@@ -94,13 +160,33 @@
 /* 414px for iPhone XR */
 
 @media (max-width: 414px) {
-    .header {
-        &__container {
-            grid-template: 1fr / repeat(2, 1fr);
+    .container {
+        width: 385px;
+    }
+    .showcase {
+        &__block {
+            right: 50px;
+        }
+        &__btn {
+            width: 100%;
         }
     }
 }
 
-@media (max-width: 320px) {
-    
+/* iPhone SE */
+
+@media (max-width: 375px) {
+    .container {
+        width: 350px;
+    }
+    .showcase {
+        &__block {
+            width: 100%;
+            bottom: 0;
+            right: 0;
+        }
+        &__btn {
+            width: 75%;
+        }
+    }
 }

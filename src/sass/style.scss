@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/bookman-old-style');
 @import 'base/variables';
+@import 'blocks/fonts';
 
 * {
     margin: 0;
@@ -32,5 +33,22 @@ img {
     object-fit: cover;
 }
 
+.btn {
+    padding: 10px;
+    background-color: $button-color;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px 5px #333;
+    transition: all 0.5s;
+    &:hover {
+        box-shadow: none;
+    }
+}
+
 @import 'blocks/header';
+@import 'blocks/showcase';
 @import 'blocks/media';

@@ -22,6 +22,11 @@ a {
     text-decoration: none;
 }
 
+.title {
+    margin: 0 auto;
+    color: #fff;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -51,4 +56,5 @@ img {
 
 @import 'blocks/header';
 @import 'blocks/showcase';
+@import 'blocks/types';
 @import 'blocks/media';

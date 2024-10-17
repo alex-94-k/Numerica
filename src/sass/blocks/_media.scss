@@ -45,11 +45,21 @@
             }
         }
     }
+    .types {
+        &__layout {
+            padding: 0 20px 0 20px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .container {
         width: 900px;
+    }
+    .types {
+        &__layout {
+            padding: 0 5px 0 5px;
+        }
     }
 }
 
@@ -65,6 +75,13 @@
             &:hover {
                 letter-spacing: normal;
             }
+        }
+    }
+    .types {
+        &__layout {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            gap: 40px;
         }
     }
 }
@@ -139,6 +156,11 @@
             }
         }
     }
+    .card {
+        &__container {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -155,6 +177,13 @@
             right: 25px;
         }
     }
+    .types {
+        &__layout {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
 }
 
 /* 414px for iPhone XR */
@@ -169,6 +198,14 @@
         }
         &__btn {
             width: 100%;
+        }
+    }
+    .types {
+        &__title {
+            width: 75%;
+        }
+        &__layout {
+            margin-top: 100px;
         }
     }
 }

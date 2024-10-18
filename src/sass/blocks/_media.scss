@@ -173,6 +173,11 @@
             gap: 20px;
         }
     }
+    .physics {
+        &__container {
+            gap: 20px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -197,6 +202,18 @@
         }
     }
     .math {
+        &__container {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__descr {
+            padding: 0 20px 0 20px;
+        }
+        &__img {
+            display: none;
+        }
+    }
+    .physics {
         &__container {
             display: flex;
             flex-direction: column-reverse;

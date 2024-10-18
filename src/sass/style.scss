@@ -23,8 +23,15 @@ a {
 }
 
 .title {
-    margin: 0 auto;
     color: #fff;
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    background-color: $button-color;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .container {
@@ -41,6 +48,7 @@ img {
 .btn {
     padding: 10px;
     background-color: $button-color;
+    color: #fff;
     outline: none;
     border: none;
     border-radius: 15px;
@@ -57,4 +65,5 @@ img {
 @import 'blocks/header';
 @import 'blocks/showcase';
 @import 'blocks/types';
+@import 'blocks/math';
 @import 'blocks/media';

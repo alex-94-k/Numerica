@@ -58,7 +58,14 @@
     }
     .types {
         &__layout {
-            padding: 0 5px 0 5px;
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+    .card {
+        &__container {
+            margin: 0 auto;
         }
     }
 }
@@ -161,6 +168,11 @@
             margin: 0 auto;
         }
     }
+    .math {
+        &__container {
+            gap: 20px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -182,6 +194,18 @@
             display: flex;
             flex-direction: column;
             gap: 40px;
+        }
+    }
+    .math {
+        &__container {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__descr {
+            padding: 0 20px 0 20px;
+        }
+        &__img {
+            display: none;
         }
     }
 }

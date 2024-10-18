@@ -1,0 +1,31 @@
+.math {
+    padding-bottom: 50px;
+    &__container {
+        padding: 50px 0 50px 0;
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 40px;
+    }
+    &__img {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    &__title {
+        color: #fff;
+        background-color: $button-color;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    &__text {
+        color: #fff;
+        text-align: justify;
+    }
+    &__btn {
+        width: 50%;
+    }
+}

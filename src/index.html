@@ -179,26 +179,25 @@
     <div class="overlay">
        <div class="modal">
             <div class="modal__subtitle fz30">Залиште свої контакти для зворотнього звʼязку</div>
-            <form action="#" class="modal__form">
+            <form action="#" id="form" class="modal__form">
                 <div class="modal__input">
                     <input type="text" id="name" name="name">
                     <label for="name" class="fz18">Повне імʼя</label>
+                    <span id="name__error" class="error__message"></span>
                 </div>
                 <div class="modal__input">
                     <input type="email" id="email" name="email">
                     <label for="email" class="fz18">Email</label>
+                    <span id="email__error" class="error__message"></span>
                 </div>
                 <div class="modal__input">
                     <input type="tel" id="tel" name="tel">
                     <label for="tel" class="fz18">Номер телефону</label>
-                </div>
-                <div class="modal__input">
-                    <textarea name="message" id="message" rows="10" cols="50"></textarea>
-                    <label for="message" class="fz18">Повідомлення</label>
+                    <span id="tel__error" class="error__message"></span>
                 </div>
                 <div class="modal__btns">
                     <button class="modal__btn btn" type="submit">Відправити</button>
-                    <button class="modal__btn btn close" type="submit">Закрити</button>
+                    <button class="modal__btn btn close">Закрити</button>
                 </div>
             </form>
        </div>

@@ -50,6 +50,15 @@
             padding: 0 20px 0 20px;
         }
     }
+    .presentation {
+        &__layout {
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        }
+        &__block {
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -76,6 +85,9 @@
     .container {
         width: 740px;
     }
+    .title {
+        padding: 10px;
+    }
     .navbar {
         &__link {
             transform: none;
@@ -89,6 +101,13 @@
             display: grid;
             grid-template: repeat(2, 1fr) / repeat(2, 1fr);
             gap: 40px;
+        }
+    }
+    .presentation {
+        &__layout {
+            margin-top: 150px;
+            display: grid;
+            grid-template: repeat(4, 1fr) / repeat(2, 1fr);
         }
     }
 }
@@ -184,6 +203,10 @@
     .container {
         width: 100%;
     }
+    .title {
+        font-size: 35px;
+        line-height: 42px;
+    }
     .header {
         &__container {
             grid-template: 1fr / repeat(2, 1fr);
@@ -225,6 +248,12 @@
             display: none;
         }
     }
+    .presentation {
+        &__subtitle {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
 }
 
 /* 414px for iPhone XR */
@@ -249,6 +278,20 @@
             margin-top: 100px;
         }
     }
+    .m-showcase {
+        &__block {
+            left: 50px;
+        }
+        &__btn {
+            width: 100%;
+        }
+    }
+    .presentation {
+        &__layout {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 /* iPhone SE */
@@ -265,6 +308,22 @@
         }
         &__btn {
             width: 75%;
+        }
+    }
+    .modal {
+        width: 80%;
+        &__subtitle {
+            display: none;
+        }
+    }
+    .m-showcase {
+        &__block {
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        &__btn {
+           width: 75%;
         }
     }
 }

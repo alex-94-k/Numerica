@@ -1,0 +1,59 @@
+.presentation {
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__layout {
+        margin-top: 100px;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+        gap: 40px;
+    }
+    &__block {
+        width: 190px;
+        height: 254px;
+        border-radius: 20px;
+        background: #f5f5f5;
+        position: relative;
+        padding: 1.8rem;
+        border: 2px solid $second-color;
+        transition: 0.5s ease-out;
+        overflow: visible;
+        &:hover {
+            border-color: $button-color;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+            .presentation__btn {
+                transform: translate(-50%, 50%);
+                opacity: 1;
+            }
+        }
+    }
+    &__card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__subtitle {
+        font-weight: bold;
+    }
+    &__text {
+        color: rgb(134, 134, 134);
+        margin-bottom: 40px;
+    }
+    &__btn {
+        transform: translate(-50%, 125%);
+        width: 60%;
+        border-radius: 15px;
+        border: none;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.3s ease-out;
+    }
+}

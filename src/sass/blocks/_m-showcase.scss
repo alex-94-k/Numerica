@@ -1,0 +1,29 @@
+.m-showcase {
+    height: 100vh;
+    background: url('../img/mathPage.jpg') center (center/cover) no-repeat;
+    &__container {
+        height: 100%;
+        position: relative;
+    }
+    &__block {
+        width: 50%;
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    &__subtitle {
+        color: $main-color;
+        span {
+            background-color: $button-color;
+            color: #fff;
+            padding: 5px;
+        }
+    }
+    &__text {
+        text-align: justify;
+    }
+}

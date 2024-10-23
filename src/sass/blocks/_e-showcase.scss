@@ -1,0 +1,33 @@
+.e-showcase {
+    padding-bottom: 50px;
+    height: 100vh;
+    background: url('../img/nmt.jpg') center (center/cover) no-repeat;
+    &__container {
+        height: 100%;
+        position: relative;
+    }
+    &__block {
+        width: 50%;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__subtitle {
+        color: #fff;
+        span {
+            background-color: $button-color;
+            color: #fff;
+            padding: 5px;
+        }
+    }
+    &__btn {
+        width: 50%;
+    }
+    &__text {
+        text-align: justify;
+        color: #fff;
+    }
+}

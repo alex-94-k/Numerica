@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>ЗНО/НМТ</title>
+</head>
+<body>
+    <!-- Header -->
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <img src="img/mainLogo.png" alt="logo">
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link fz18">Головна</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="math.html" class="navbar__link fz18">Математика</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="physics.html" class="navbar__link fz18">Фізика</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link fz18">ЗНО/НМТ</a>
+                    </li>
+                </ul>
+                <div class="navbar__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Exam showcase -->
+
+    <section class="e-showcase">
+        <div class="e-showcase__container container">
+            <div class="e-showcase__block">
+                <h2 class="e-showcase__subtitle fz30">Почни підготовку до НМТ <span>вже зараз!</span></h2>
+                <p class="e-showcase__text fz18">"Мрія про бажаний ВУЗ стає ближчою! Наші уроки допоможуть тобі ефективно підготуватися до НМТ з математики та фізики. Гарантуємо індивідуальний підхід і високі результати."</p>
+                <a href="#" class="showcase__btn btn fz18">Залишити запит</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+
+    <section class="steps">
+        <div class="steps__container container">
+            <h2 class="steps__title title fz40">Твій шлях до успішного результату</h2>
+            <div class="steps__layout">
+                <div class="steps__block">
+                    <div class="steps__img">
+                        <img src="img/test.jpg" alt="test">
+                    </div>
+                    <div class="steps__descr">
+                        <h3 class="steps__subtitle fz30">Тест на рівень знань</h3>
+                        <p class="steps__text fz18"><span>Ефективне навчання починається з оцінки.</span> Тест на рівень знань – це не іспит, а інструмент, який допоможе нам зрозуміти, з чого саме тобі варто почати. Тільки маючи чітке уявлення про твої знання, ми зможемо побудувати оптимальний маршрут досягнення твоєї мети. Не бійся цього тесту, він допоможе тобі зекономити час і досягти кращих результатів у найкоротші терміни.</p>
+                        <a href="#" class="steps__btn btn fz18">Пройти тест</a>
+                    </div>
+                </div>
+                <div class="steps__block steps__block-second">
+                    <div class="steps__descr">
+                        <h3 class="steps__subtitle fz30">Підбір програми</h3>
+                        <p class="steps__text fz18"><span>Твоя програма – це живий документ.</span> Ми розуміємо, що під час підготовки можуть виникати нові питання або змінюватися пріоритети. Тому твоя навчальна програма буде гнучкою і зможе адаптуватися до твоїх потреб. Ми будемо регулярно оцінювати твої прогреси і вносити необхідні корективи, щоб ти завжди був на шляху до успіху.</p>
+                    </div>
+                    <div class="steps__img">
+                        <img src="img/analysis.jpg" alt="analysis">
+                    </div>
+                </div>
+                <div class="steps__block">
+                    <div class="steps__img">
+                        <img src="img/demoTest.png" alt="demo">
+                    </div>
+                    <div class="steps__descr">
+                        <h3 class="steps__subtitle fz30">Пробні тести з НМТ</h3>
+                        <p class="steps__text fz18"><span>Визнач свої сильні та слабкі сторони.</span> Проходячи пробні тести, ти зможеш точно визначити, які теми викликають у тебе найбільші труднощі. Це дозволить нам скоригувати твою індивідуальну програму навчання і приділити більше уваги саме тим розділам, які потребують додаткової підготовки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">Copy &copy; 2024 Developed by Kasper</p>
+        </div>
+    </footer>
+
+     <!-- Modal -->
+
+     <div class="overlay">
+        <div class="modal">
+             <div class="modal__subtitle fz30">Залиште свої контакти для зворотнього звʼязку</div>
+             <form action="#" id="form" class="modal__form">
+                 <div class="modal__input">
+                     <input type="text" id="name" name="name">
+                     <label for="name" class="fz18">Повне імʼя</label>
+                     <span id="name__error" class="error__message"></span>
+                 </div>
+                 <div class="modal__input">
+                     <input type="email" id="email" name="email">
+                     <label for="email" class="fz18">Email</label>
+                     <span id="email__error" class="error__message"></span>
+                 </div>
+                 <div class="modal__input">
+                     <input type="tel" id="tel" name="tel">
+                     <label for="tel" class="fz18">Номер телефону</label>
+                     <span id="tel__error" class="error__message"></span>
+                 </div>
+                 <div class="modal__btns">
+                     <button class="modal__btn btn" type="submit">Відправити</button>
+                     <button class="modal__btn btn close" type="reset">Закрити</button>
+                 </div>
+             </form>
+        </div>
+     </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

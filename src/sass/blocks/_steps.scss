@@ -1,0 +1,46 @@
+.steps {
+    padding-bottom: 50px;
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__title {
+        top: -70px;
+    }
+    &__layout {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    &__block {
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        gap: 40px;
+    }
+    &__img {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__subtitle {
+        padding: 10px;
+        background-color: $button-color;
+        color: #fff;
+        border-radius: 15px;
+        width: 75%;
+    }
+    &__text {
+        text-align: justify;
+    }
+    &__btn {
+        width: 75%;
+    }
+}
